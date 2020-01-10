@@ -1,4 +1,6 @@
-﻿namespace UserPosts.Domain
+﻿using System.Collections.Generic;
+
+namespace UserPosts.Domain
 {
     public class User : BaseEntity
     {
@@ -7,5 +9,7 @@
         public string Username { get; set; }
 
         public string Email { get; set; }
+
+       
     }
 }

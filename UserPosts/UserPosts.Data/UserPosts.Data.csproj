@@ -45,11 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDataAccess.cs" />
+    <Compile Include="CommentsDataAccess.cs" />
     <Compile Include="PostDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDataAccess.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Files\comments.json" />
     <None Include="Files\posts.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -1,14 +1,40 @@
-﻿namespace UserPosts.Services
+﻿using System;
+using System.CodeDom;
+using UserPosts.Domain;
+
+namespace UserPosts.Services
 {
     public class UserService
     {
         private readonly IUserRepository userRepository;
         private readonly IPostRepository postRepository;
+        private readonly ICommentsRepository commentsReposatory;
+        private readonly IUserWithCommentsRepository userWithCommentsRepository;
+
 
         public UserService(IUserRepository userRepository, IPostRepository postRepository)
         {
             this.userRepository = userRepository;
             this.postRepository = postRepository;
+        }
+
+        public UserService(IUserRepository userRepository, IPostRepository postRepository, ICommentsRepository commentsReposatory, IUserWithCommentsRepository userWithComments)
+        {
+            this.userRepository = userRepository;
+            this.postRepository = postRepository;
+            this.commentsReposatory = commentsReposatory;
+            this.userWithCommentsRepository = userWithComments;
+        }
+
+        public UserWithComments GetCommentByUserId(int id)
+        {
+            var user = userRepository.GetById(id);
+            var posts = postRepository.GetPostsByUserId(user.Id);
+            var comments = userWithCommentsRepository.GetById()
+
+
+
+            throw new NotImplementedException();
         }
 
         public UserActiveRespose GetUserActiveRespose(int id)
@@ -44,6 +70,7 @@
            
             return response;
         }
+
     }
 
     public class UserActiveRespose

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "postId": 1,
+    "text": "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "id": 2,
+    "postId": 1,
+    "text": "expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "id": 3,
+    "postId": 1,
+    "text": "quas totam nostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "id": 4,
+    "postId": 3,
+    "text": "suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "id": 5,
+    "postId": 3,
+    "text": "rerum est autem sunt rem eveniet architecto"
+  }
+]
